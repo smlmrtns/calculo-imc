@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Teste</title>
+
+		<!-- linkando -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 		<script src="js/js1.js"></script>
+
+  		<style type="text/css">
+  			/*rodape*/
+  			footer #rodape{text-align: center; font-size: 200%; margin-top: 100%;}
+  			/*centralizar imagem*/
+  			header .centralizaImagem{display: block; margin-right: auto; margin-left: auto;}
+
+  			form{ margin-top: 50px; margin-bottom: 50px;}
+  			table{margin-right: auto; margin-left: auto; border-spacing: 50px; border-collapse: separate;}
+  		</style>
+			
+	</head>
+	<body>
+		<header>
+			<img src="img/logo.jpg" alt="logo do site" class="img-thumbnail img-responsive centralizaImagem">
+		</header>
+		<div class="container">
+			<form id="formulario">
+				<fieldset>
+					<legend>Calculo IMC</legend>
+
+					<label for="sexo">SEXO</label>
+						<input type="radio" name="sexo" value="masculino"> Masculino
+						<input type="radio" name="sexo" value="feminino"> Feminino
+					<label for="peso">PESO</label>
+						<input placeholder="ex: 70" type="number" name="peso" required step="0.01" min="0" max="400.0">
+
+					<label for="altura">ALTURA</label>
+						<input placeholder="ex: 1,80" type="number" name="altura" required step="0.01" min="0" max="2.0">
+
+						<label for="imc">IMC:</label>
+						<input type="text" name="imc" disabled="disabled">
+
+						<a type="submit" onclick="calcular()">Calcular</a>
+				</fieldset>
+			</form>
+		</div>
+		<footer>
+			<p id="rodape">Criado por &copy;Sori</p>
+		</footer>
+	</body>
+</html>
